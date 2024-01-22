@@ -2,11 +2,11 @@ from shopapp.models import Client
 from django.core.management.base import BaseCommand
 
 class Command(BaseCommand):
-    help = "Create many clients"
+    help = "Create fake clients"
 
     def add_arguments(self, parser):
 
-        parser.add_argument('quantity', type=int, help='Quantity fake clients')
+        parser.add_argument('quantity', type=int, help='Create fake clients')
 
     def handle(self, *args, **kwargs):
 
